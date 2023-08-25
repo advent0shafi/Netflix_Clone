@@ -1,0 +1,88 @@
+.row{
+    margin-left: 20px;
+    color: #fff;
+}
+
+.posters{
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y:hidden ;
+    transition: transform 0.3s ease;
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+
+.poster{
+    cursor: pointer;
+    max-height: 250px;
+    margin-right: 10px;
+    transition:transform 0.3s;
+
+}
+
+.smallPoster{
+    transform: scale(1.09); 
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    max-height: 150px;
+    padding: 15px;
+    margin-right: 10px;
+
+}
+.smallPoster:hover{
+    transform: scale(1);
+}
+.video-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Adjust as needed */
+  }
+  
+
+  .video-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  /* Style the video title */
+  .video-title {
+    margin-top: 10px;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Show ellipsis (...) for truncated text */
+  }
+  .close-button {
+    background-color: rgba(255, 255, 255, 0.196); /* Transparent background */
+    color: #ffffff; /* Red text color */
+    border: none;
+    padding: 5px 10px; /* Adjust padding as needed */
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s, background-color 0.3s;
+    position: absolute;
+    top: 120px; /* Adjust top position as needed */
+    right: 315px; /* Adjust right position as needed */
+  }
+  
+  .close-button:hover {
+    background-color: white; /* White background on hover */
+    color: black; /* Black text color on hover */
+  }
+
+  .poster:hover {
+    transform: scale(1.09); 
+  }
